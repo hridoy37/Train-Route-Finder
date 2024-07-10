@@ -10,7 +10,7 @@ class StationAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
 class TrainRouteAdmin(admin.ModelAdmin):
-    list_display = ('train', 'from_station', 'to_station', 'departure_time', 'arrival_time', 'fare')
+    list_display = ('train', 'from_station', 'to_station', 'fare')
     list_filter = ('train', 'from_station', 'to_station')
     search_fields = ('train__name', 'from_station__name', 'to_station__name')
 

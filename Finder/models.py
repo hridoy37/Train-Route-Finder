@@ -19,7 +19,7 @@ class TrainRoute(models.Model):
     fare = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return f"{self.train.name} from {self.from_station.name} to {self.to_station.name} (Departure: {self.departure_time}, Arrival: {self.arrival_time}, Fare: {self.fare})"
+        return self.train.name
 
 
 
